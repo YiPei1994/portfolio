@@ -13,3 +13,7 @@ body {
   background-color: #191f30;
   color: #fff;
 }
+
+.navbar ul li a.active svg {
+  color: #fbd214;
+}

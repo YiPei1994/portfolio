@@ -1,5 +1,11 @@
+import MainNav from '../components/MainNav';
+
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div>
+      Contact <MainNav />
+    </div>
+  );
 }
 
 export default Contact;

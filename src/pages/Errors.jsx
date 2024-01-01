@@ -1,4 +1,5 @@
 import { Link, useRouteError } from 'react-router-dom';
+import MainNav from '../components/MainNav';
 
 function Error() {
   const error = useRouteError();
@@ -10,6 +11,7 @@ function Error() {
       <p>{error.data || error.message}</p>
 
       <Link to="-1">&larr; Go back</Link>
+      <MainNav />
     </div>
   );
 }
