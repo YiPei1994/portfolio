@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body bg color #191f30
+ headers and btns #fbd214
+ cotainer bg #fbf8ef
+
+ text on container color #022144
+ text on body bg color #9da1a8 */
+
+body {
+  background-color: #191f30;
+  color: #fff;
+}
