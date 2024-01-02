@@ -7,7 +7,7 @@ function Home() {
           <span className="uppercase text-yellow-500">Yi Pei Zhu</span>,
           <br />
           your
-          <span className="upppercase text-yellow-500"> Frontend Maestro</span>!
+          <span className=" text-yellow-500"> Frontend Maestro</span>!
         </h1>
         <p>
           A junior to mid-level developer driven by passion and a constant
