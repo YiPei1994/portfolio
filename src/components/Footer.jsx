@@ -5,7 +5,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <div className="fixed	 bottom-0  mt-auto flex flex-col items-center gap-5 bg-slate-100 py-10 text-slate-900">
+    <div className="fixed	bottom-0 mt-auto  flex w-full flex-col items-center gap-5 bg-slate-100 py-10 text-slate-900">
       <div className="m-auto w-2/5">
         <img className="h-auto " src="../src/assets/logo.png" alt="logo" />
       </div>
