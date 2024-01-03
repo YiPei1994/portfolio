@@ -5,12 +5,12 @@ import { AiFillLinkedin } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <div className="fixed	bottom-0 mt-auto  flex w-full flex-col items-center gap-5 bg-slate-100 py-10 text-slate-900">
+    <div className=" mt-auto  flex w-full flex-col items-center gap-5 bg-slate-100 py-10 text-slate-900">
       <div className="m-auto w-2/5">
-        <img className="h-auto " src="../src/assets/logo.png" alt="logo" />
+        <img className="h-auto " src="../src/assets/avatar.svg" alt="logo" />
       </div>
       <div className="flex flex-col items-center gap-5 text-center">
-        <h4>Contact me</h4>
+        <h4 className="text-2xl">Find me on</h4>
         <div className="flex w-full items-center">
           <span>
             {' '}
