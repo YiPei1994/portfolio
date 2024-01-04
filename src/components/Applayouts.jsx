@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
+
 import Footer from './Footer';
+import MainNav from './MainNav';
 
 function Applayouts() {
   return (
     <div className="flex h-screen w-full flex-col  text-center">
-      <Header />
+      <MainNav />
 
       <main>
         <Outlet />

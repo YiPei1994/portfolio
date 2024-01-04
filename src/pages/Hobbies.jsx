@@ -1,12 +1,5 @@
-import MainNav from '../components/MainNav';
-
 function Hobbies() {
-  return (
-    <div>
-      Hobbies
-      <MainNav />
-    </div>
-  );
+  return <div>Hobbies</div>;
 }
 
 export default Hobbies;
