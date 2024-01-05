@@ -6,7 +6,7 @@ import { AiFillLinkedin } from 'react-icons/ai';
 function Footer() {
   const year = new Date().getFullYear();
   return (
-    <div className=" mt-auto  flex w-full flex-col items-center gap-5 bg-slate-100 py-10 text-slate-900">
+    <div className=" mt-auto  flex w-full flex-col items-center gap-5 bg-slate-900/50 py-10 text-slate-100">
       <div className="flex w-full flex-col items-center gap-5">
         <p className="m-auto w-4/5">
           Developed by Yi Pei Zhu <br /> Copyright © {year}

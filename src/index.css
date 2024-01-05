@@ -17,24 +17,20 @@ body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1.2rem;
 }
-.mainBlock {
-  background-image: linear-gradient(
-    340deg,
-    hsl(224deg 32% 14%) 0%,
-    hsl(211deg 38% 25%) 9%,
-    hsl(202deg 46% 34%) 18%,
-    hsl(195deg 53% 42%) 27%,
-    hsl(191deg 58% 47%) 36%,
-    hsl(192deg 65% 47%) 45%,
-    hsl(192deg 73% 47%) 55%,
-    hsl(191deg 85% 46%) 64%,
-    hsl(196deg 68% 44%) 73%,
-    hsl(203deg 51% 37%) 82%,
-    hsl(212deg 39% 26%) 91%,
-    hsl(224deg 32% 14%) 100%
-  );
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: url('/src/assets/bg.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }

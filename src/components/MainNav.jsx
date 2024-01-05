@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Navbar,
   Collapse,
@@ -18,7 +18,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
           to="/"
-          className="flex items-center text-slate-900 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
+          className="flex items-center text-sky-300 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
         >
           <HiMiniHome className="mr-3 text-2xl" />
           Home
@@ -27,7 +27,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
           to="/about"
-          className="flex items-center text-slate-900 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
+          className="flex items-center  text-sky-300 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
         >
           <HiMiniUser className="mr-3 text-2xl" />
           About
@@ -36,7 +36,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
           to="/hobbies"
-          className="flex items-center  text-slate-900 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
+          className="flex items-center text-sky-300  transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
         >
           <HiHashtag className="mr-3 text-2xl" />
           Hobbies
@@ -45,7 +45,7 @@ function NavList() {
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
           to="/contact"
-          className="flex items-center  text-slate-900 transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
+          className="flex items-center text-sky-300  transition-colors hover:text-yellow-500 aria-[current=page]:text-yellow-500"
         >
           <HiPhone className="mr-3 text-2xl" />
           Contact
@@ -57,7 +57,7 @@ function NavList() {
 
 export default function MainNav() {
   const [openNav, setOpenNav] = React.useState(false);
-
+  const [isScrolled, setIsScrolled] = useState(false);
   const handleWindowResize = () =>
     window.innerWidth >= 768 && setOpenNav(false);
 
@@ -69,13 +69,32 @@ export default function MainNav() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar className="text-blue-gray-900 fixed top-0 mx-auto  overflow-hidden rounded-none bg-slate-100 px-6 py-3">
-      <div className="m-auto flex max-w-screen-xl  items-center justify-between">
+    <Navbar
+      className={`text-blue-gray-900 navbar fixed top-0  mx-auto overflow-hidden rounded-none border-none bg-slate-900  px-6 py-3 ${
+        isScrolled ? 'xl:bg-slate-900/75' : 'xl:bg-inherit'
+      }`}
+    >
+      <div className="m-auto flex max-w-screen-xl  items-center justify-between text-sky-300">
         <Typography variant="h6" className="mr-4  cursor-pointer   py-1.5">
           <Link to="/" className="flex items-center">
-            <img className="h-10" src="../src/assets/logo.png" alt="logo" />
-            <h6 className="ml-5 text-slate-900">Ynnovation & Performance</h6>
+            <h6 className="ml-5 text-4xl italic ">YP.</h6>
           </Link>
         </Typography>
         <div className="hidden md:block">
@@ -83,7 +102,7 @@ export default function MainNav() {
         </div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit text-slate-900 hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
+          className="ml-auto h-6 w-6 text-inherit text-sky-300 hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >

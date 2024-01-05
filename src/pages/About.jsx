@@ -11,7 +11,7 @@ function About() {
   return (
     <>
       <div className="m-auto mt-32 flex max-w-screen-xl flex-col items-center px-8 py-8 text-left">
-        <h1 className="mb-4 text-wrap text-4xl leading-normal">
+        <h1 className="mb-4 text-wrap text-3xl leading-normal">
           Know who <span className="text-yellow-500">I am</span>
         </h1>
         <p className="text-lg">
@@ -34,7 +34,7 @@ function About() {
         </p>
       </div>
       <div className="m-auto flex max-w-screen-xl flex-col items-center px-8 py-8 text-left">
-        <h2 className="mb-4 text-wrap text-4xl leading-normal">
+        <h2 className="mb-4 text-wrap text-3xl leading-normal">
           My <span className="text-yellow-500">Stacks</span>{' '}
         </h2>
         <div className="flex w-full flex-wrap justify-between md:justify-start">
