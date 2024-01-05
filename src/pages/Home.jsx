@@ -8,25 +8,25 @@ function Home() {
     <div className="mainBlock  flex flex-col items-center gap-8 px-6 py-40 pb-10 xl:flex-row xl:flex-wrap xl:justify-center">
       {/* main block */}
       <div className="flex w-full max-w-screen-xl flex-wrap items-center justify-center xl:mt-20  xl:w-4/5 xl:items-start">
-        <h1 className="mb-4 w-full text-3xl	leading-normal xl:mt-12 xl:w-1/2 xl:text-5xl xl:leading-relaxed">
+        <h1 className="mb-4 w-full text-3xl	leading-normal xl:mt-12 xl:w-1/2 xl:items-start xl:text-left xl:text-5xl xl:leading-relaxed">
           Hey, I&apos;m{' '}
           <span className="uppercase text-yellow-500">Yi Pei Zhu 👋</span>,
           <br />
           your
           <span className=" text-yellow-500"> Frontend Maestro</span>!
         </h1>
-        <div className="mb-12 mt-20 w-full md:m-auto md:w-1/2 xl:mr-10 xl:w-2/5">
+        <div className="mb-12 mt-20 w-3/5 md:m-auto md:w-[42%] xl:mr-10 xl:w-2/5">
           <img src="../src/assets/developer.svg" alt="developer" />
         </div>
       </div>
       {/* introducing */}
-      <div className="flex max-w-screen-xl flex-col gap-5 xl:m-auto xl:my-20 xl:flex xl:w-4/5 xl:flex-row-reverse">
-        <div className="flex flex-col items-center justify-center md:m-auto md:w-4/5 xl:w-3/5">
+      <div className="flex max-w-screen-xl flex-col gap-5 xl:m-auto xl:my-20 xl:flex xl:w-3/5 xl:flex-row-reverse ">
+        <div className="flex flex-col items-center justify-center md:m-auto md:w-4/5 xl:w-3/5 xl:items-start xl:text-left">
           <h2 className="text-3xl xl:text-5xl ">
             {' '}
             Let me <span className="text-yellow-500">Intruduce</span> myself
           </h2>
-          <p className="text-md my-5 px-4 leading-normal xl:text-xl">
+          <p className="text-md my-5 px-4 leading-normal md:w-4/5 xl:w-full xl:text-xl">
             Greetings! I&apos;m a self-taught frontend developer fueled by a
             dynamic blend of passion and energy for coding. More than a hobby,
             it&apos;s my driving force. Constantly learning and evolving, I
