@@ -5,7 +5,7 @@ import MainNav from './MainNav';
 
 function Applayouts() {
   return (
-    <div className="flex h-screen w-full flex-col  text-center">
+    <div className="flex h-screen w-full flex-col  text-center ">
       <MainNav />
 
       <main>

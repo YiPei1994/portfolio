@@ -14,7 +14,7 @@ import { HiMiniHome } from 'react-icons/hi2';
 
 function NavList() {
   return (
-    <ul className="my-2 flex flex-col items-center gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="my-2 flex flex-col items-center gap-2 md:mb-0 md:mt-0 md:flex-row md:items-center md:gap-6">
       <Typography as="li" variant="small" className="p-1 font-medium">
         <NavLink
           to="/"
@@ -59,7 +59,7 @@ export default function MainNav() {
   const [openNav, setOpenNav] = React.useState(false);
 
   const handleWindowResize = () =>
-    window.innerWidth >= 960 && setOpenNav(false);
+    window.innerWidth >= 768 && setOpenNav(false);
 
   React.useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
@@ -70,20 +70,20 @@ export default function MainNav() {
   }, []);
 
   return (
-    <Navbar className="fixed top-0 mx-auto max-w-screen-xl rounded-none bg-slate-100 px-6 py-3">
-      <div className="text-blue-gray-900 flex items-center justify-between">
+    <Navbar className="text-blue-gray-900 fixed top-0 mx-auto  overflow-hidden rounded-none bg-slate-100 px-6 py-3">
+      <div className="m-auto flex max-w-screen-xl  items-center justify-between">
         <Typography variant="h6" className="mr-4  cursor-pointer   py-1.5">
           <Link to="/" className="flex items-center">
             <img className="h-10" src="../src/assets/logo.png" alt="logo" />
             <h6 className="ml-5 text-slate-900">Ynnovation & Performance</h6>
           </Link>
         </Typography>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <NavList />
         </div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit text-slate-900 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="ml-auto h-6 w-6 text-inherit text-slate-900 hover:bg-transparent focus:bg-transparent active:bg-transparent md:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
